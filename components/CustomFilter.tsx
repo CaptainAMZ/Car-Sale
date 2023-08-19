@@ -56,6 +56,7 @@ const CustomFilter = ({ title, options }: CustomFilterProps) => {
                   }
                 >
                   {({ selected }) => (
+                    <>
                     <span
                       className={`block truncate ${
                         selected ? "font-medium" : "font-normal"
@@ -63,6 +64,7 @@ const CustomFilter = ({ title, options }: CustomFilterProps) => {
                     >
                       {option.title}
                     </span>
+                    </>
                   )}
                 </Listbox.Option>
               ))}
